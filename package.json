@@ -1,0 +1,26 @@
+{
+  "name": "burger_fest",
+  "version": "1.0.0",
+  "description": "burger logger",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuppince24/burger_fest.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tuppince24/burger_fest/issues"
+  },
+  "homepage": "https://github.com/Tuppince24/burger_fest#readme"
+}

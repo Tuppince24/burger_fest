@@ -1,8 +1,9 @@
 var express = require("express");
-var burger = require("../models/burger");
 var router = express.Router();
+var burger = require("../models/burger.js");
 
 
+console.log(burger);
 //get method
 router.get("/", function(req, res){
     burger.all(function(data){
@@ -40,5 +41,21 @@ router.put("/api/burgers/:id", function(req, res){
             res.status(200).end();
         }
     });
+
+    router.delete("/api/burgers/:id", function(req, res){
+        var condition = "id = " + req.params.id;
+
+        burger.delete(condition, function(result){
+            if (result.affectedRows == 0) {
+                return res.status(404).end();
+            } else{
+                res.status(200).end();
+            }
+        });
+    });
+
 });
 
+console.log(burger)
+
+module.exports = router;

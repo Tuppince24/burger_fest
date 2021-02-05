@@ -21,7 +21,7 @@ router.post("/api/burger", function(req, res){
     burger.insertOne([
         "burger_name", "devoured"
     ],[
-        req.body.burger_name, req.body.devoured
+        req.body.burger_name
     ], function(result) {
         res.json({ id: result.insertID });
     });
@@ -43,17 +43,17 @@ router.put("/api/burger/:id", function(req, res){
         }
     });
 
-    router.delete("/api/burger/:id", function(req, res){
-        var condition = "id = " + req.params.id;
+    // router.delete("/api/burger/:id", function(req, res){
+    //     var condition = "id = " + req.params.id;
 
-        burger.delete(condition, function(result){
-            if (result.affectedRows == 0) {
-                return res.status(404).end();
-            } else{
-                res.status(200).end();
-            }
-        });
-    });
+    //     burger.delete(condition, function(result){
+    //         if (result.affectedRows == 0) {
+    //             return res.status(404).end();
+    //         } else{
+    //             res.status(200).end();
+    //         }
+    //     });
+    // });
 
 });
 

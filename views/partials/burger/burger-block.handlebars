@@ -2,8 +2,8 @@
 	{{burger_name}}
 
 	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}GET EATEN!!{{/if}}
+		{{#if devoured}}GET EATEN!!{{else}}console.log(devoured){{/if}}
 	</button>
 
-	<button class="delete-cat" data-id="{{this.id}}">DELETE!</button>
+	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
 </li>

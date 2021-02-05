@@ -8,7 +8,7 @@ $(function() {
       };
   
       // Send the PUT request.
-      $.ajax("/api/burgers/" + id, {
+      $.ajax("/api/burger/" + id, {
         type: "PUT",
         data: newDevouredState
       }).then(
@@ -25,12 +25,12 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        name: $("#ca").val().trim(),
-        sleepy: $("[name=devoured]:checked").val().trim()
+        burger_name: $("#burger_name").val().trim(),
+        devoured: $(".devoured:checked").val().trim()
       };
   
       // Send the POST request.
-      $.ajax("/api/burgers", {
+      $.ajax("/api/burger", {
         type: "POST",
         data: newBurger
       }).then(
@@ -46,7 +46,7 @@ $(function() {
       var id = $(this).data("id");
   
       // Send the DELETE request.
-      $.ajax("/api/burgers/" + id, {
+      $.ajax("/api/burger/" + id, {
         type: "DELETE"
       }).then(
         function() {

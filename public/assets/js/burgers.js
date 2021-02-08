@@ -1,4 +1,4 @@
-console.log("this is my burger.js")
+console.log("this is my burger.js");
 $(function() {
     $(".change-devoured").on("click", function(event) {
       var id = $(this).data("id");

@@ -2,24 +2,28 @@
   margin: 0;
   padding: 0;
   background-color: yellow;
+}
+.container{
+  margin: 0 auto;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-row: 1fr 1fr 1fr;
   grid-gap:20px;
 }
-.container{
-  width: 90%;
-
+.container > * {
+  background-color: #fafafa;
 }
 
-.item{
+.cell{
   background: #58d5f6;
   color: white;
   padding: 10px;
   height: 50%;
 }
 
-.item:nth-child(even){
+.cell:nth-child(even){
   background: #236fc8;
 }
 

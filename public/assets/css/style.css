@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   background-color: yellow;
-}
-.container{
-  width: 90%;
-  display: grid;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap:20px;
+}
+.container{
+  width: 90%;
+
 }
 
 .item{

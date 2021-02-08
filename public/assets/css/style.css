@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+}
+.container{
+  width: 90%;
+  display: grid;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap:20px;
+}
+
+.item{
+  background: #58d5f6;
+  color: white;
+  padding: 10px;
+  height: 50%;
+}
+
+.item:nth-child(even){
+  background: #236fc8;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+}
+  
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+  
+.form-group {
+  margin-bottom: 5px;
+}
+.section {
+  margin:0;
+  padding: 0%;
+}

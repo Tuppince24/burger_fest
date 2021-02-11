@@ -1,2 +1,2 @@
 web: node server.js
-CLEARDB_DATABASE_URL => mysql://[username]:[password]@[host]/[database name]?reconnect=true
+
